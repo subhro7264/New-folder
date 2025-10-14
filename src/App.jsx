@@ -9,7 +9,6 @@ import "./App.css";
 
 const App = () => {
   const [books, setBooks] = useState([]);
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -43,7 +42,6 @@ const App = () => {
   // }, []);
 
 
-
   
   useEffect(() => {
     const fetchBooks = async () => {
@@ -63,13 +61,11 @@ const App = () => {
           setLoading(false);
           console.log(loadedBooks,"object from array");
           
-        } else {
-          setBooks([]); 
-        }
+        } 
       } catch (error) {
         console.error("Error fetching books:", error);
         setError("Error fetching books:")
-         setLoading(false);
+        setLoading(false);
       }
     };
 
@@ -122,7 +118,7 @@ const updateBook = (updatedBook) => {
           }
         />
         <Route path="/book/:id" element={<BookDetails books={books} />} />
-        <Route path="/AddBook" element={<BookForm addBook={newBook}/>}/>
+        <Route path="/AddBook" element={<BookForm  addBook={newBook}/>}/>
         <Route path="/edit/:id" element={<EditBook books={books} updateBook={updateBook} />} />
 
         

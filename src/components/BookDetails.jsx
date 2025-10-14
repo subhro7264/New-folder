@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 const BookDetails = ({ books }) => {
   const { id } = useParams();
   console.log(id);
-  
+
   const navigate = useNavigate();
 
   const book = books.find((b) => b.id === id);
@@ -13,38 +13,48 @@ const BookDetails = ({ books }) => {
 
   return (
     <>
-    <div  style={{
-        margin:"20px",
-        padding: "20px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        backgroundColor:"#8ecae6",
-        borderRadius:"5px"
+      <div
+        style={{
+          margin: "20px",
+          padding: "20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          backgroundColor: "#8ecae6",
+          borderRadius: "5px",
+        }}
+      >
+        <h1>{book.name}</h1>
+        <img src={book.img} alt={book.name} style={{ width: "200px" }} />
 
-      }} >
-      
-      <h1>{book.name}</h1>
-      <img src={book.img} alt={book.name} style={{ width: "200px" }} />
-      <p>
-        <strong>Author:</strong> {book.author}
-      </p>
-      <p>
-        <strong>Genre:</strong> {book.genre}
-      </p>
-      <p>
-        <strong>Description:</strong> {book.description}
-      </p>
-      <p>
-        <strong>Publish Date:</strong> {book.publishDate}
-      </p>
-      <p>
-        <strong>Price:</strong> ${book.price}
-      </p>
+        <p>
+          {" "}
+          <strong>Author:</strong> {book.author}{" "}
+        </p>
+        <p>
+          {" "}
+          <strong>Genre:</strong> {book.genre}{" "}
+        </p>
+        <p>
+          {" "}
+          <strong>Description:</strong> {book.description}
+        </p>
+        <p>
+          {" "}
+          <strong>Publish Date:</strong> {book.publishDate}
+        </p>
+        <p>
+          <strong>Price:</strong> ${book.price}{" "}
+        </p>
 
-      <button onClick={() => navigate(-1)}>⬅ Back</button>
-    </div>
+        <button
+          style={{ padding: "10px", fontSize: "16px",borderRadius: "8px" ,cursor:"pointer" }}
+          onClick={() => navigate(-1)}
+        >
+          ⬅ Back
+        </button>
+      </div>
     </>
   );
 };

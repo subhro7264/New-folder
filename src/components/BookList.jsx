@@ -20,7 +20,7 @@ const editHandle=(id)=>{
    {/* -------------------------------->table<--------------------------*/}
         <thead>
           <tr>
-            <th  className={"thStyle"}>Image</th>
+            <th className={"thStyle"}>Image</th>
             <th className={"thStyle"} >Title</th>
             <th className={"thStyle"}>Author</th>
             <th className={"thStyle"}>Genre</th>
@@ -36,9 +36,7 @@ const editHandle=(id)=>{
 
             <tr key={book.id} className={"trStyle"}>
               <td className={"tdStyle"}>
-                <img
-                  src={book.img}
-                  alt={book.name}
+                <img src={book.img} alt={book.name}
                   style={{ width: "50px", height: "70px", objectFit: "cover" }}
                 />
               </td>
@@ -54,7 +52,7 @@ const editHandle=(id)=>{
                 {/* -------------------------------->Details Button <--------------------------*/}
                 <Link to={`/book/${book.id}`}>
                   <button className={"actionBtn"} style={{  backgroundColor: "#4CAF50" }} >
-                    View
+                    Details
                   </button>
                 </Link>
 
