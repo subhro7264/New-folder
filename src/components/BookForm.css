@@ -2,8 +2,21 @@
   margin: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
+.title{
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #bbd2ea;
+  text-align: center;
+  
+}
+
+
 .book-form {
   display: flex;
   flex-direction: column;

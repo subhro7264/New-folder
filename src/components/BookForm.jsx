@@ -61,6 +61,7 @@ const BookForm = ({ addBook }) => {
 
   return (
     <div className="book">
+      <h2 className="title">Add a New Book</h2>
       <form className="book-form" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -109,7 +110,6 @@ const BookForm = ({ addBook }) => {
         />
 
         <input
-        
           name="img"
           placeholder="img"
           value={book.img}

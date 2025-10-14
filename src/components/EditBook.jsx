@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "./EditBook.css"
 
 const EditBook = ({ books, updateBook }) => {
   const { id } = useParams();
@@ -7,7 +8,6 @@ const EditBook = ({ books, updateBook }) => {
 
   const book = books.find((b) => b.id === id);
 
-  
   const [updatedBook, setUpdatedBook] = useState({
     name: "",
     author: "",
@@ -44,8 +44,8 @@ const EditBook = ({ books, updateBook }) => {
 
       console.log(" Book updated:", data);
       updateBook(updatedBook);
-     
-      navigate("/"); 
+
+      navigate("/");
     } catch (error) {
       console.error("Error updating book:", error);
     }
@@ -57,6 +57,7 @@ const EditBook = ({ books, updateBook }) => {
 
   return (
     <div className="EditContainer">
+      <h2 className={"etitle"}>Edit Book Details</h2>
       <form className="book-form" onSubmit={handleSubmit}>
         <input
           type="text"

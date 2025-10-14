@@ -115,7 +115,7 @@ const updateBook = (updatedBook) => {
             <div className="app">
                <h1> Book Inventory</h1>
               
-              <button><Link to={"/AddBook"}>AddBook</Link></button>
+              <button className="AddBtn"><Link to={"/AddBook"}>Add New Book</Link></button>
              <BookList books={books} onDelete={deleteBook} />
 
             </div>

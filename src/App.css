@@ -4,3 +4,20 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+.AddBtn{
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #f12b426f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+.AddBtn:hover {
+  background-color: #c7f1f5;
+}
