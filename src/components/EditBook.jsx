@@ -90,6 +90,7 @@ const EditBook = ({ books, updateBook }) => {
         <input
           type="date"
           name="publishDate"
+          className="eDateInp"
           value={updatedBook.publishDate}
           onChange={handleChange}
         />
