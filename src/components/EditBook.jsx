@@ -7,7 +7,7 @@ const EditBook = ({ books, updateBook }) => {
 
   const book = books.find((b) => b.id === id);
 
-  // Initialize state with current book details
+  
   const [updatedBook, setUpdatedBook] = useState({
     name: "",
     author: "",
