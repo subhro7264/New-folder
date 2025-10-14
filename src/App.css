@@ -1,0 +1,56 @@
+.app {
+  text-align: center;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #efe3e3;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+.book-card img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-card button {
+  margin-top: 10px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-card button:hover {
+  background-color: darkred;
+}
+

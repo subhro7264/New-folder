@@ -1,0 +1,29 @@
+.bookList {
+  overflow: auto;
+  padding: 10px;
+}
+
+.thStyle {
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.tdStyle {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.trStyle:hover {
+  background-color: #a8f8b1;
+}
+
+.actionBtn {
+  margin: 2px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
