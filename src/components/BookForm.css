@@ -42,7 +42,22 @@
   outline: none;
   transition: all 0.2s ease;
 }
-
+.book-form input[type="date"],
+.dateInp {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-appearance: none; 
+  -moz-appearance: none;  
+  appearance: none;   
+} 
 
 /* Input Focus */
 .book-form input:focus {
@@ -75,13 +90,9 @@
     padding: 15px;
   }
 
-  .book-form input,input[type="date"],
+  .book-form input,
   .book-form button {
     font-size: 15px;
     padding: 8px 12px;
-     -webkit-appearance: none;
-  -moz-appearance: none;    
-  appearance: none;
-
   }
 }

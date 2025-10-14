@@ -98,7 +98,7 @@ const BookForm = ({ addBook }) => {
         <input
           type="date"
           name="publishDate"
-          
+          className="dateInp"
           value={book.publishDate}
           onChange={handleChange}
         />
