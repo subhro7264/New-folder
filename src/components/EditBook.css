@@ -81,6 +81,9 @@
   .book-form button {
     font-size: 15px;
     padding: 8px 12px;
+         -webkit-appearance: none;
+  -moz-appearance: none;    
+  appearance: none;
   }
 
 }
