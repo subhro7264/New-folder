@@ -70,10 +70,10 @@ const BookForm = ({addBook}) => {
         <input type="text" name="author" placeholder="Author" value={book.author} onChange={handleChange} />
         <input type="text" name="genre" placeholder="genre" value={book.genre} onChange={handleChange} />
         <input type="number"name="price" placeholder="price" value={book.price} onChange={handleChange} />
-        <input type="date" name="publishDate" className="dateInp"  value={book.publishDate} onChange={handleChange} />
+        <input type="date" name="publishDate" placeholder="Enter The Date" className="dateInp"  value={book.publishDate} onChange={handleChange} />
         <input type="text" name="description" placeholder="Description" value={book.description} onChange={handleChange}  />
         <input type="text" name="img" placeholder="img" value={book.img} onChange={handleChange} />
-        
+
         <button type="submit">Add Book</button>
 
       </form>
