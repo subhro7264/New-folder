@@ -56,7 +56,7 @@ const EditBook = ({ books, updateBook }) => {
   }
 
   return (
-    <div style={{ padding: "20px", display: "flex", justifyContent: "center" }}>
+    <div style={{ padding: "20px",width:"200px", display: "flex", justifyContent: "center",}}>
       <form className="book-form" onSubmit={handleSubmit}>
         <input
           type="text"
