@@ -1,9 +1,14 @@
-.book {
-  margin: 5rem;
+
+.EditContainer {
+  padding: 10px;
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  min-height: 80vh; 
+  background-color: #f8f9fa;
 }
+
+/* Book Form */
 .book-form {
   display: flex;
   flex-direction: column;
