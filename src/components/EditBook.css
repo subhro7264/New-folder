@@ -20,6 +20,7 @@
   flex-direction: column;
  
 }
+
 .book-form {
   display: flex;
   flex-direction: column;
@@ -35,7 +36,6 @@
   box-sizing: border-box;
 }
 
-/* Input & Button Styles */
 .book-form input,
 .book-form button {
   padding: 10px 15px;
@@ -62,13 +62,11 @@
   appearance: none;
 }
 
-/* Input Focus */
 .book-form input:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Button */
 .book-form button {
   background-color: #007bff;
   color: #fff;
@@ -81,7 +79,7 @@
   background-color: #15bf67;
 }
 
-/* - Responsive Design for Mobile Devices */
+/* -------- Responsive Design for Mobile Devices----- */
 @media (max-width: 600px) {
   .EditContainer {
     padding: 15px;
