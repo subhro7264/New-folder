@@ -3,8 +3,13 @@ import { Link ,useNavigate} from "react-router-dom";
 import "./BookList.css"
 
 const BookList = ({ books, onDelete,  }) => {
-
+const navigate = useNavigate();
  
+
+const editHandle=(id)=>{
+ navigate(`/edit/${id}`);
+  }
+
 
   return (
 
@@ -52,16 +57,16 @@ const BookList = ({ books, onDelete,  }) => {
                 </Link>
 
                 {/* ------------------------->Edit Button<-------------------------------- */}
-                <Link to={`/edit/${book.id}`}>
-                <button  className={"actionBtn"} style={{  backgroundColor: "#2196F3" }} >
+                
+                <button onClick={() => editHandle(book.id)}  className={"actionBtn"} style={{  backgroundColor: "#2196F3" }} >
                   Edit
                 </button>
-                </Link>
 
                 {/* ----------------------> Delete Button<----------------------------------- */}
                 <button  onClick={() => onDelete(book.id)} className={"actionBtn"} style={{  backgroundColor: "red" }} >
                   Delete
                 </button>
+                
               </td>
             </tr>
           ))}
