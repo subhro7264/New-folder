@@ -91,14 +91,14 @@ const BookForm = ({ addBook }) => {
       const newBook = { id: data.name, ...book };
       addBook(newBook);
       navigate("/");
-      setBook({
-        name: "",
-        author: "",
-        publishDate: "",
-        description: "",
-        img: "",
-        price: 0,
-      });
+      setName("");
+      setAuthor("");
+      setGenre("");
+      setPrice(0);
+      setPublishDate("");
+      setDescription("");
+      setImg("");
+    
     } catch (error) {
       console.error("Error adding book:", error);
     }
