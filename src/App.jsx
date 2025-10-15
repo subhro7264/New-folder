@@ -111,12 +111,11 @@ const updateBook = (updatedBook) => {
             <div className="app">
                <h1> Book Inventory</h1>
               
-              <button className="AddBtn"><Link to={"/AddBook"}>Add New Book</Link></button>
+            <button className="AddBtn"><Link to={"/AddBook"}>Add New Book</Link></button>
              <BookList books={books} onDelete={deleteBook} />
 
-            </div>
-          }
-        />
+            </div>} />
+
         <Route path="/book/:id" element={<BookDetails books={books} />} />
         <Route path="/AddBook" element={<BookForm  addBook={newBook}/>}/>
         <Route path="/edit/:id" element={<EditBook books={books} updateBook={updateBook} />} />
